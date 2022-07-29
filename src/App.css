@@ -4,13 +4,35 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 #clients {
     padding: 30px 0;
 }
 #clients .client-logo {
     padding: 10px;
 }
+
+/*sho here banner*/
+.hero-banner h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: azure;
+}
+
+.hero-banner .lead{
+    font-weight: bold;
+    color: white;
+}
+
+.hero-banner .btn{
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+
+}
+
+
 
  
 

@@ -56,6 +56,10 @@ const NAV_ITEMS= [
     ],
   },
   {
+    label:'Fashion',
+    to:'fashion'
+  },
+  {
     label:'Login',
     to:'loginpage'
   },

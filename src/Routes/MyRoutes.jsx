@@ -2,6 +2,7 @@ import React from 'react';
 import {Routes,Route} from "react-router-dom";
 import LoginForm from '../FormComponents/LoginForm';
 import SignUpForm from '../FormComponents/RegistrationForm';
+import FashionPage from '../MyComponents/FashionPage/Fashion';
 import HomePage from '../MyComponents/HomePage/HomePage';
 import ShopPage from '../MyComponents/ShopPage/ShopPage';
 
@@ -14,6 +15,7 @@ function RouterComponent() {
             <Route path="/signupform" element={<SignUpForm />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/shop" element={<ShopPage />} />
+            <Route path="/fashion" element={<FashionPage />} />
         </Routes>
     );
   }
