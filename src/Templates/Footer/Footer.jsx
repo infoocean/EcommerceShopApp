@@ -16,7 +16,7 @@ import { ReactNode } from 'react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 
-const Logo = (props: any) => {
+const Logo = (props) => {
   return (
     <svg
       height={32}
@@ -83,7 +83,7 @@ function FooterComponent() {
           <SimpleGrid
             templateColumns={{ sm: '1fr', md: '1fr 1fr 1fr 1fr 1fr' }}
             spacing={8}>
-            <Stack spacing={6}>
+            <Stack spacing={6} display={'flex'} justify='center'>
               <Box>
                 <Logo color={useColorModeValue('gray.700', 'white')} />
               </Box>

@@ -1,12 +1,12 @@
 import React from 'react';
-
 import {
     Stack,
     Flex,
-    Button,
     Text,
+    HStack,
     VStack,
     useBreakpointValue,
+    Heading,
   } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
@@ -14,11 +14,12 @@ function HomePagebanner() {
   return (
     <Flex
         w={'full'}
-        h={'100vh'}
+        height={'500px'}
         backgroundImage={
           'url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
         }
         backgroundSize={'cover'}
+        backgroundRepeat="no-repeat"
         backgroundPosition={'center center'}>
         <VStack
           w={'full'}
@@ -26,21 +27,21 @@ function HomePagebanner() {
           px={useBreakpointValue({ base: 4, md: 8 })}
           bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
           <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
-            <Text
+            <Heading
               color={'white'}
               fontWeight={900}
-              lineHeight={1.2}
+              lineHeight={1.1}
               fontSize={useBreakpointValue({ base: '4xl', md: '120px' })}>
               CUSTOMER
-            </Text>
-            <Text
+            </Heading>
+            <Heading
               color={'white'}
               fontWeight={900}
-              lineHeight={1.2}
+              lineHeight={1.1}
               fontSize={useBreakpointValue({ base: '3xl', md: '120px' })}>
               SERVICES
-            </Text>
-            <Stack direction={'row'} pl="15px">
+            </Heading>
+            <HStack direction={'row'} pl={'40%'} >
               <Link
                 to="/"
                 fontWeight={900}
@@ -50,7 +51,7 @@ function HomePagebanner() {
                 _hover={{ bg: 'blue.500' }}>
                 CONTACT NOW <i class="fa-solid fa-angles-right"></i>
               </Link>
-            </Stack>
+            </HStack>
           </Stack>
         </VStack>
       </Flex>

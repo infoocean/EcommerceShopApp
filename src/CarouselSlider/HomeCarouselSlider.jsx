@@ -95,7 +95,7 @@ export default function CarouselSlider() {
         {cards.map((card, index) => (
           <Box
             key={index}
-            height={'6xl'}
+            //height={'6xl'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
@@ -105,12 +105,12 @@ export default function CarouselSlider() {
             <Box  height="500px" position="relative">
               <Stack 
                 spacing={6}
-                maxW={'6xl'}
                 position="absolute"
                 top="50%"
                 transform="translate(0, -50%)"
                 >
                 <Text
+                pl={'100px'}
                 color={'white'}
                 fontWeight={900}
                 lineHeight={0.5}
@@ -118,26 +118,21 @@ export default function CarouselSlider() {
                 CHOSE
                 </Text>
                 <Text
+                pl={'100px'}
                 color={'white'}
                 fontWeight={900}
                 lineHeight={0.8}
                 fontSize={({ base: '4xl', md: '120px' })}>
-                YOUR STYLE.
+                YOUR STYLE NOW.
                 </Text>
-                <Stack direction={'row'}>
-                
-                <Center>
+                <Stack direction={'row'} pl={'50%'}>
                 <Link
                     to="/"
                     bg={'blue.400'}
-                    fontWeight={700}
-                    rounded={'full'}
                     style={{color:'white'}}
                     _hover={{ bg: 'blue.500' }}>
                     Check Order Now <i class="fa-solid fa-angles-right"></i>
                   </Link>
-</Center>
-                  
               </Stack>
               </Stack>
             </Box>

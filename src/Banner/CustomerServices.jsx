@@ -6,6 +6,7 @@ import {
     Text,
     VStack,
     useBreakpointValue,
+    Heading,
   } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
   
@@ -13,26 +14,28 @@ import { Link } from 'react-router-dom';
     return (
       <Flex
         w={'full'}
-        h={'100vh'}
+        height={'500px'}
         backgroundImage={
           'url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
         }
         backgroundSize={'cover'}
+        backgroundRepeat="no-repeat"
         backgroundPosition={'center center'}>
         <VStack
           w={'full'}
           justify={'center'}
+          align="left"
           px={useBreakpointValue({ base: 4, md: 8 })}
           bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-          <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
-            <Text
+          <Stack  align={'flex-start'} spacing={6}>
+            <Heading
               color={'white'}
-              fontWeight={700}
-              lineHeight={1.2}
+              fontWeight={900}
+              lineHeight={1}
               fontSize={useBreakpointValue({ base: '3xl', md: '120px' })}>
               SIMPLE
-            </Text>
-            <Stack direction={'row'} pl="15px">
+            </Heading>
+            <Stack direction={'row'} pl="45%">
               <Link
                 to="/"
                 bg={'blue.400'}
@@ -45,10 +48,10 @@ import { Link } from 'react-router-dom';
             </Stack>
             <Text
               color={'white'}
-              fontWeight={700}
+              fontWeight={900}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: '3xl', md: '120px' })}>
-              TO ORDER
+              TO ORDER.
             </Text>
           </Stack>
         </VStack>

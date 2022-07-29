@@ -7,6 +7,8 @@ import {
     Button,
     VStack,
     HStack,
+    Stack,
+    Checkbox,
     Wrap,
     FormControl,
     FormLabel,
@@ -18,6 +20,7 @@ import {MdPhone,MdOutlineEmail,MdLockOutline} from 'react-icons/md';
 import {BsPerson } from 'react-icons/bs';
 import { Formik } from 'formik';
 import { Link } from 'react-router-dom';
+import { Center,Heading} from '@chakra-ui/react';
   
 export default function SignUpForm() {
     return (
@@ -30,6 +33,11 @@ export default function SignUpForm() {
               <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
+                    <Heading>
+                      <Center fontSize={'20px'} pb={5}>
+                        Registration Form
+                      </Center>
+                    </Heading>
                     <VStack spacing={5}>
                       <Formik
                         const initialValues={{
@@ -114,7 +122,7 @@ export default function SignUpForm() {
                           <form onSubmit={handleSubmit}>
                           <HStack align="flex-start" mt={'5px'}>
                                 <FormControl>
-                                    <FormLabel htmlFor="username">User Name</FormLabel>
+                                    <FormLabel mb={0} pb={0} htmlFor="username">User Name</FormLabel>
                                         <InputGroup borderColor="#E0E1E7">
                                             <InputLeftElement
                                                 pointerEvents="none"
@@ -137,9 +145,9 @@ export default function SignUpForm() {
                                         </Text>
                                 </FormControl>
                             </HStack>
-                            <HStack align="flex-start" mt={'20px'}>
+                            <HStack align="flex-start" mt={'15px'}>
                                 <FormControl>
-                                  <FormLabel htmlFor="email">Email Address</FormLabel>
+                                  <FormLabel mb={0} pb={0} htmlFor="email">Email Address</FormLabel>
                                         <InputGroup borderColor="#E0E1E7">
                                             <InputLeftElement
                                                 pointerEvents="none"
@@ -162,9 +170,9 @@ export default function SignUpForm() {
                                         </Text>
                                 </FormControl>
                             </HStack>
-                            <HStack align="flex-start" mt={'20px'}>
+                            <HStack align="flex-start" mt={'15px'}>
                                 <FormControl>
-                                  <FormLabel htmlFor="number">Mobile Number</FormLabel>
+                                  <FormLabel mb={0} pb={0} htmlFor="number">Mobile Number</FormLabel>
                                         <InputGroup borderColor="#E0E1E7">
                                             <InputLeftElement
                                                 pointerEvents="none"
@@ -187,9 +195,9 @@ export default function SignUpForm() {
                                         </Text>
                                 </FormControl>
                             </HStack>
-                            <HStack align="flex-start" mt={'20px'}>
+                            <HStack align="flex-start" mt={'15px'}>
                                 <FormControl>
-                                        <FormLabel htmlFor="password">Password</FormLabel>
+                                        <FormLabel mb={0} pb={0} htmlFor="password">Password</FormLabel>
                                             <InputGroup borderColor="#E0E1E7">
                                                 <InputLeftElement
                                                     pointerEvents="none"
@@ -226,7 +234,7 @@ export default function SignUpForm() {
                         )}
                       </Formik>
                     </VStack>
-                    <HStack mt={'5px'}>
+                    <HStack mt={'7px'}>
                       <Text>Allready have An Account? </Text>
                       <Link style={{ color: 'blue'}} to="/loginform">Login</Link>
                     </HStack>
