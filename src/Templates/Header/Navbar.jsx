@@ -61,11 +61,11 @@ const NAV_ITEMS= [
   },
   {
     label:'Login',
-    to:'loginpage'
+    to:'loginform'
   },
   {
     label:'SignUp',
-    to:'signuppage'
+    to:'signupform'
   },
 ];
 

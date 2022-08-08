@@ -1,10 +1,15 @@
-import { Text } from '@chakra-ui/react';
 import React from 'react';
+import SocialProfileWithImage from './CarouselSlider';
+import FilterSec from './FilterSec';
+
 
 function FashionPage() {
     return (
-        <Text>Hii</Text>
+        <>
+        <FilterSec/>
+        <SocialProfileWithImage/>
+        </>
     );
   }
   
-  export default FashionPage;
+export default FashionPage;
