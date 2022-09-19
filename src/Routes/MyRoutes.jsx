@@ -5,8 +5,10 @@ import SignUpForm from "../FormComponents/RegistrationForm";
 import ComputerAcceseries from "../MyComponents/Computer&Accesseries/ComputerAccesserires";
 import FashionPage from "../MyComponents/FashionPage/Fashion";
 import HomePage from "../MyComponents/HomePage/HomePage";
+import OrderPage from "../MyComponents/OrderPage/OrderPage";
 import ProductDetailsFilter from "../MyComponents/ProductDetailsFilter/ProductDetailsFilter";
 import ShopPage from "../MyComponents/ShopPage/ShopPage";
+import UserProfilePage from "../MyComponents/UserProfilePage/Userprofilepage";
 import Shopingcart from "../OtherComnponents/ShopingCart";
 
 function RouterComponent() {
@@ -22,6 +24,8 @@ function RouterComponent() {
       <Route path="/fashion" element={<FashionPage />} />
       <Route path="/productdetails&filter" element={<ProductDetailsFilter />} />
       <Route path="/shopingcart" element={<Shopingcart />} />
+      <Route path="/userprofile/:id" element={<UserProfilePage />} />
+      <Route path="/orderpage/:id" element={<OrderPage />} />
     </Routes>
   );
 }
