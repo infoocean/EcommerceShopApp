@@ -49,7 +49,7 @@ function HomePagebanner() {
                 rounded={'full'}
                 style={{color:'white'}}
                 _hover={{ bg: 'blue.500' }}>
-                CONTACT NOW <i class="fa-solid fa-angles-right"></i>
+                CONTACT NOW <i className="fa-solid fa-angles-right"></i>
               </Link>
             </HStack>
           </Stack>

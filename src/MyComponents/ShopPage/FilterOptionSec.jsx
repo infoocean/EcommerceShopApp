@@ -73,7 +73,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
               </InputGroup>
             </Stack>
             <Stack direction={'row'}>
-              <i class="fa-solid fa-filter"></i>
+              <i className="fa-solid fa-filter"></i>
               <Text as='a' fontSize={'12px'} href='#'><u>Filter</u></Text>
             </Stack>
         </Container>

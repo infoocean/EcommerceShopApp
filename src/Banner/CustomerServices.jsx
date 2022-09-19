@@ -43,7 +43,7 @@ import { Link } from 'react-router-dom';
                 rounded={'full'}
                 style={{color:'white'}}
                 _hover={{ bg: 'blue.500' }}>
-                Check Order Now <i class="fa-solid fa-angles-right"></i>
+                Check Order Now <i className="fa-solid fa-angles-right"></i>
               </Link>
             </Stack>
             <Text

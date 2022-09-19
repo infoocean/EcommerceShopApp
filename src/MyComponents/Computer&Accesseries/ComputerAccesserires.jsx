@@ -1,18 +1,18 @@
 import React from "react";
 import EmailSubscribe from "../../OtherComnponents/EmailSubscription";
 import SocialProfileWithImage from "./CarouselSlider";
-import Fashionproducts from "./Fashionproducts";
-import FilterSec from "./FilterSec";
+import ComputerAcceseriesProducts from "./ComputerAcceseriesProducts";
+import FilterSection from "./FilterSec";
 
-function FashionPage() {
+function ComputerAcceseries() {
   return (
     <>
-      <FilterSec />
+      <FilterSection />
       <SocialProfileWithImage />
-      <Fashionproducts />
+      <ComputerAcceseriesProducts />
       <EmailSubscribe />
     </>
   );
 }
 
-export default FashionPage;
+export default ComputerAcceseries;

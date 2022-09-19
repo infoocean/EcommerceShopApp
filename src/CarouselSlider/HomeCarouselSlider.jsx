@@ -131,7 +131,7 @@ export default function CarouselSlider() {
                     bg={'blue.400'}
                     style={{color:'white'}}
                     _hover={{ bg: 'blue.500' }}>
-                    Check Order Now <i class="fa-solid fa-angles-right"></i>
+                    Check Order Now <i className="fa-solid fa-angles-right"></i>
                   </Link>
               </Stack>
               </Stack>
